@@ -21,6 +21,12 @@ After you run this script, you will have
 
 ####################################################
 
+Install-Module -Name Microsoft.Graph.Intune
+
+Connect-MSGraph -AdminConsent
+
+####################################################
+
 function Get-AuthToken {
 
 <#
