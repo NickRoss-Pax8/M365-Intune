@@ -9,9 +9,9 @@ See LICENSE in the project root for license information.
 After you run this script, you will have
 
 1.	A device compliance policy for:
-	 iOS (Configure line 1413)
-     Android (Configure line 1388)
-     Windows(Configure line 1435)
+	 	iOS (Configure line 1413)
+     		Android (Configure line 1388)
+     		Windows(Configure line 1435)
 2.	A device configuration policy for Windows Devices to have BitLocker(Configure line 1460)
 3.	Terms and Conditions for when users enroll(Configure line 1479)
 4.	Office 365 Business pushed out as a required App to window 10 devices(Configure line 1491)
@@ -1671,7 +1671,7 @@ $JSON4 = @"
 
 # Setting application AAD Group
 
-$AADGroup = Read-Host -Prompt "Enter the Azure AD Group name where policies will be assigned. Nick Ross is the man so you only have to enter this one detail"
+$AADGroup = Read-Host -Prompt "Enter the Azure AD Group name where policies will be assigned."
 
 $TargetGroupId = (get-AADGroup -GroupName "$AADGroup").id
 
